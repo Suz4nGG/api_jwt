@@ -1,0 +1,4 @@
+/node_modules
+.env
+
+# hacer que los controladores reciban en la cabecera el token

@@ -1,0 +1,24 @@
+@HOSTNAME = http://localhost
+@BASE-URL = api/notes
+@PORT = 3001
+@CONTENT-TYPE = Content-Type: application/json
+@TOKEN = Authorization: Bearer
+############################################################
+
+POST {{HOSTNAME}}:{{PORT}}/{{BASE-URL}}
+{{CONTENT-TYPE}}
+{{TOKEN}}
+{
+    "content": "nueva nota con token de susan",
+    "important": true,
+}
+
+############################################################
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNDU0OTZiYWRlZjhlYTc3NGVkYWY3YSIsInVzZXJuYW1lIjoic3VzYW4iLCJpYXQiOjE2NDg3MTAyNDUsImV4cCI6MTY0OTMxNTA0NX0.rOEfVpXLWgY-74aNoq50cJstO_TK2PiN5Cpmh_VlDUs
+
+{
+    "content": "n2asda",
+    "important": true,
+}

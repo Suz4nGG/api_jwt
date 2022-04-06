@@ -1,0 +1,13 @@
+@HOSTNAME = http://localhost
+@BASE-URL = api/users
+@PORT = 3001
+@CONTENT-TYPE = Content-Type: application/json
+############################################################
+POST {{HOSTNAME}}:{{PORT}}/{{BASE-URL}}
+{{CONTENT-TYPE}}
+
+{
+    "username": "susan",
+    "name": "SusanaG",
+    "password": "12345"
+}
